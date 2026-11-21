@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Geist+Mono:wght@500&family=Manrope:wght@800&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PODeq MAX: 3D model</title><meta name="robots" content="noindex,nofollow"><meta name="description" content="PODeq MAX Rev G proposal: 3D model for engineering review. Concept, not tested hardware."><style>
+
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:#05070C;color:#fff;font-family:'DM Sans',system-ui,sans-serif;overflow:hidden}
+#wrap{position:fixed;inset:0;background:radial-gradient(ellipse at 55% 35%,#131f45 0%,#0a1020 55%,#05070C 100%)}
+canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none}
+#head{position:absolute;left:22px;top:18px;right:22px;display:flex;justify-content:space-between;gap:16px;pointer-events:none}
+h1{margin:0;font:800 22px Manrope,system-ui,sans-serif;letter-spacing:-.01em}#sub{margin-top:4px;font-size:13.5px;color:rgba(255,255,255,.75);max-width:560px;line-height:1.35}
+#tag{font:500 11px 'Geist Mono',ui-monospace,monospace;letter-spacing:.14em;color:rgba(255,255,255,.68);text-align:right;line-height:1.7;white-space:nowrap}
+#bar{position:absolute;left:14px;right:14px;bottom:14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between}
+#states,#tools{display:flex;flex-wrap:wrap;gap:6px}
+button{font:500 13.5px 'DM Sans',system-ui,sans-serif;color:#dfe6ff;background:rgba(11,16,32,.78);border:1px solid rgba(143,176,255,.28);border-radius:999px;padding:8px 13px;cursor:pointer}
+button:hover{border-color:rgba(143,176,255,.7)}button.on{background:#3563E9;border-color:#3563E9;color:#fff}
+#tip{position:absolute;display:none;pointer-events:none;background:rgba(5,7,12,.92);border:1px solid rgba(143,176,255,.35);border-radius:8px;padding:6px 10px;font-size:13px;max-width:250px}
+#hint{position:absolute;left:22px;bottom:64px;font-size:12px;color:rgba(255,255,255,.55)}
+@media (max-width:700px){#tag{display:none}h1{font-size:18px}#hint{display:none}}
+</style></head><body><div id="wrap"><canvas id="c"></canvas>
+<div id="head"><div><h1>PODeq MAX: 3D model</h1><div id="sub">The Rev G proposal, issue 6, straight from the CAD model: every part, in eight positions. Point at a part to see its name.</div></div><div id="tag">REV G PROPOSAL &middot; 21 NOV 2026<br>CONCEPT &middot; NOT TESTED HARDWARE</div></div>
+<div id="hint">Drag to turn. Scroll or pinch to zoom. Right-drag or two fingers to slide.</div>
+<div id="bar"><div id="states"></div><div id="tools"><button id="inside">See inside</button><button id="spin">Turn slowly</button></div></div><div id="tip"></div></div>
+<script type="module" src="viewer.js"></script></body></html>
